@@ -1,0 +1,58 @@
+
+/****************************************************navbar styling********************************************/
+header{
+position: relative;
+padding: 0px !important;
+}
+.navbar{
+border: 0;
+background: #1e1d22;
+margin-bottom: 0px !important;
+}
+
+.navbar-link{
+text-align: center;
+font-size: 1.7rem;
+letter-spacing: .6px;
+font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+.navbar-nav > li > a {
+color: #bababa;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus, .navbar-nav .active{
+background: #1c1c1c !important;
+color: #0088fc;
+}
+
+
+.fa-navicon{
+font-size: 22px !important;
+color: #bababa;
+}
+@media (max-width: 767px) {
+	
+	nav.navbar-nav.navbar-right{
+	padding-top: 0px !important;
+		
+	margin-top: 0px !important;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.navbar-link{
+	width: 120px;
+
+	}
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus, .navbar-nav .active{
+	-webkit-transition: .3s; 
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s; 
+	border-bottom: 3px solid #0088fc;
+
+	}
+}

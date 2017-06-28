@@ -1,0 +1,26 @@
+/**********************************************font face definitions************************************************/
+
+@font-face{
+font-family: 'Raleway';
+src:url("/assets/Raleway.eot");
+src:url("/assets/Raleway.eot?#iefix") format('embedded-opentype'),
+url("/assets/Raleway.woff2") format("woff2"),
+url("/assets/Raleway.woff") format('woff'),
+url("/assets/Raleway.ttf") format('truetype'),
+url("/assets/Raleway.svg#Raleway") format('svg');
+font-weight:400;
+font-style:normal;
+}
+
+
+@font-face{
+font-family: whoa;
+src:url("/assets/Whoa!.eot");
+src:url("/assets/Whoa!.eot?#iefix") format('embedded-opentype'),
+url("/assets/Whoa!.woff2") format("woff2"),
+url("/assets/Whoa!.woff") format('woff'),
+url("/assets/Whoa!.ttf") format('truetype'),
+url("/assets/Whoa!.svg#Whoa!") format('svg');
+
+}
+

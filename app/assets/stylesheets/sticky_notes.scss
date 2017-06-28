@@ -1,0 +1,156 @@
+
+/***********************************************sticky note styling*********************************************/
+#note_board{
+position: relative;
+width: 100%;
+margin: 10px auto 20px auto;
+min-height: 800px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5f5f5f+0,2c2c2c+100 */
+background: #5f5f5f; /* Old browsers */
+background: -moz-linear-gradient(top,  #5f5f5f 0%, #2c2c2c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5f5f5f 0%,#2c2c2c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5f5f5f 0%,#2c2c2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f5f5f', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: inset 0px 5px 10px -2px rgba(0, 0, 0, 0.86),inset 0px -5px 10px -2px rgba(0, 0, 0, 1),0px 0px 10px 6px rgba(5, 5, 6, 0.69);
+-moz-box-shadow:   inset 0px 5px 10px -2px rgba(0, 0, 0, 0.86),inset 0px -5px 10px -2px rgba(0, 0, 0, 1),0px 0px 10px 6px rgba(5, 5, 6, 0.69);
+box-shadow:         inset 0px 5px 10px -2px rgba(0, 0, 0, 0.86),inset 0px -5px 10px -2px rgba(0, 0, 0, 1),0px 0px 10px 6px rgba(5, 5, 6, 0.69);
+border: 10px groove #565555;
+}
+
+
+.noteboard_heading{
+padding-top: 25px;
+text-align: center;
+font-size: 6.0rem;
+color: #f9f604;
+font-family: 'Whoa!';
+}
+
+/* grey image for boards to give them texture */
+.grey_texture{
+display: block;
+opacity: 0.3; 
+filter: alpha(opacity=30);
+background-image: url('/assets/grey-texture.jpg');
+background-repeat: repeat;
+top: 0px;
+left: 0px;
+z-index: 1;
+width: 100%;
+height: 100%;
+max-height: 100%;
+position: absolute;
+}
+#sticky_note_list{
+overflow: hidden;
+padding: 7px;
+position: relative;
+z-index: 2;
+
+}
+.sticky_note_list_item{
+word-wrap: break-word;
+position: relative;
+min-height: 30px;
+margin: 8px 1% 8px 1%;
+
+padding: 23px 1% 30px 2%;
+float: left;
+color: #000;
+
+width: 31.33333333%;
+-webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.86), 0px 10px 15px -4px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:     0px 4px 10px -2px rgba(0, 0, 0, 0.86), 0px 10px 15px -4px rgba(0, 0, 0, 0.75);
+box-shadow:          0px 4px 10px -2px rgba(0, 0, 0, 0.86), 0px 10px 15px -4px rgba(0, 0, 0, 0.75);
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7ef00+1,e8e188+100 */
+background: #f7ef00; /* Old browsers */
+background: -moz-linear-gradient(top,  #f7ef00 1%, #e8e188 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f7ef00 1%,#e8e188 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f7ef00 1%,#e8e188 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ef00', endColorstr='#e8e188',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.sticky_note_list_item h3{
+padding-bottom: 5px;
+font-weight: bold;
+}
+
+
+.sticky_note_list_item.yellow{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7ef00+1,e8e188+100 */
+background: #f7ef00; /* Old browsers */
+background: -moz-linear-gradient(top,  #f7ef00 1%, #e8e188 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f7ef00 1%,#e8e188 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f7ef00 1%,#e8e188 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ef00', endColorstr='#e8e188',GradientType=0 ); /* IE6-9 */
+}
+
+.sticky_note_list_item.purple{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9936d0+1,b07bce+100 */
+background: #9936d0; /* Old browsers */
+background: -moz-linear-gradient(top,  #9936d0 1%, #b07bce 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #9936d0 1%,#b07bce 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #9936d0 1%,#b07bce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9936d0', endColorstr='#b07bce',GradientType=0 ); /* IE6-9 */
+
+
+}
+.sticky_note_list_item.green{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51d330+1,a3d198+100 */
+background: #51d330; /* Old browsers */
+background: -moz-linear-gradient(top,  #51d330 1%, #a3d198 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #51d330 1%,#a3d198 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #51d330 1%,#a3d198 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51d330', endColorstr='#a3d198',GradientType=0 ); /* IE6-9 */
+
+}
+
+.sticky_note_list_item.blue{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07f9f1+1,7af4f0+100 */
+background: #07f9f1; /* Old browsers */
+background: -moz-linear-gradient(top,  #07f9f1 1%, #7af4f0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #07f9f1 1%,#7af4f0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #07f9f1 1%,#7af4f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07f9f1', endColorstr='#7af4f0',GradientType=0 ); /* IE6-9 */
+
+}
+.button_area{
+width: 50%;
+
+position: absolute;
+top: 0px;
+right: 3px;
+overflow: hidden;
+}
+.sticky_note_list_item .delete_button, .sticky_note_list_item .edit_button{
+cursor: pointer;
+padding: 3px 5px;
+margin-right: 4px;
+display: block;
+font-size: 18px;
+float: right;
+color: #4b4b4b;
+}
+.yellow_link{
+	
+color: #f9f604 !important;
+}
+@media (max-width: 420px){
+.sticky_note_list_item{
+width: 98%;
+}
+.noteboard_heading{
+
+font-size: 2.8rem;
+
+}
+}
+
+@media (min-width: 421px) and (max-width: 560px){
+.sticky_note_list_item{
+width: 48%;
+}
+}

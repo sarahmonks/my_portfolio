@@ -1,0 +1,83 @@
+/***************************************scrollbar and scrolling functionality styles***********************************************/
+
+::-webkit-scrollbar{  
+padding: 1px;
+width: 4px;  
+background-color: #353535;
+}  
+
+::-webkit-scrollbar-track { 
+z-index: 400;
+border-radius: 2px; 
+background-color: #353535;  
+}  
+
+::-webkit-scrollbar-thumb{ /*styling for scrollbar thumb*/
+border-radius: 2px; 
+background-color: #939396; 
+}  
+::-webkit-scrollbar-thumb:hover {  
+background-color: #dfdfdf; 
+} 
+
+/*we need to add scrolling to the container_wrapper and to the side panel*/
+/*the following css transitions will create smooth scrolling on all modern devices*/
+
+.scrollable{
+overflow: scroll; /*overflow scroll is not supported on android 2.3 or below however in future iterations we can incorporate a fallback*/
+-webkit-transition-property: top, bottom;
+-moz-transition-property: top, bottom;
+-o-transition-property: top, bottom;
+transition-property: top, bottom;
+
+-webkit-transition-duration: .2s, .2s;
+-moz-transition-duration: .2s, .2s;
+-o-transition-duration: .2s, .2s;
+transition-duration: .2s, .2s;
+
+-webkit-transition-timing-function: linear, linear;
+-moz-transition-timing-function: linear, linear;
+-o-transition-timing-function: linear, linear;
+transition-timing-function: linear, linear;
+-webkit-overflow-scrolling: touch;
+}
+
+/* Scroll to top button positioning and styles */
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: rgba(0,0,0,0.4);
+	color: #eeeeee;
+	width: 45px;
+	height: 45px;
+	line-height: 36px;
+	right: 8px;
+	bottom: 114px;
+	padding-top: 2px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+.scroll-top-wrapper:hover {
+	background-color: #0088fc;
+}
+.scroll-top-wrapper.show {
+    visibility: visible;
+    cursor: pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}

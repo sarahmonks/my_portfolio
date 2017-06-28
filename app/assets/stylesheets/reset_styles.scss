@@ -1,0 +1,32 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, address, em, img, q,small, strong, b, i,
+ol, ul, li,form, label, table, caption,tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+html{
+/*removes the highlight blue color when clicking on elements on mobile*/
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-text-size-adjust: 100%; /*stops the font from stretching on the iphone on orientation change*/
+height: 100%;
+}
+
+/*remove the default list styling from all uls*/
+ul{
+list-style: none;
+}
+
+a{
+text-decoration: none; /*remove the underline from all anchor tags*/
+}
+
+img{
+display: block;
+}

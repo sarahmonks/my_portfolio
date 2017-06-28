@@ -1,0 +1,114 @@
+
+/*********************************************************styling for forms*********************************************/
+
+label{
+line-height: 2.1rem;
+font-size: 1.6rem;
+letter-spacing: 1.0px; /*create a small space between each letter so the text is more readable*/
+}
+
+input.form-control, textarea.form-control{
+-moz-box-shadow: 	none !important;
+-webkit-box-shadow: 	none !important;
+box-shadow:	 	none !important; 
+border: 1px solid #000 !important; 
+
+}
+
+input.form-control{
+height: 40px;
+}
+
+input[type="text"].form-control:focus, input[type="password"].form-control:focus, input[type="email"].form-control:focus, input[type="tel"]:focus, textarea:focus{
+overflow: visible;
+color: #000; 
+border:1px solid #0088fc !important; 
+box-shadow: inset 0px 0px 0px 100px #fff;
+-moz-box-shadow: inset 0px 0px 0px 100px #fff;
+-webkit-box-shadow: inset 0px 0px 0px 100px #fff;
+}
+
+
+/*input text fields placeholder*/
+input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="tel"]:-moz-placeholder{ 
+color: #949494; 	/*text color for the placeholder text on firefox*/
+font-size: 1.5rem;
+letter-spacing: .7px; /*create a small space between each letter so the text is more readable*/
+
+}
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder{
+color: #949494; 	/*text color for the placeholder text on chrome*/
+font-size: 1.5rem;
+letter-spacing: .7px; /*create a small space between each letter so the text is more readable*/
+}
+
+/*textarea placeholder*/
+textarea::-webkit-input-placeholder{
+color: #949494 !important; 	/*text color for the placeholder text on chrome*/
+font-size: 1.5rem;
+letter-spacing: .7px; /*create a small space between each letter so the text is more readable*/
+
+}
+/*textarea placeholder*/
+textarea:-moz-input-placeholder{
+color: #949494 !important; 	/*text color for the placeholder text on chrome*/
+font-size: 1.5rem;
+letter-spacing: .7px; /*create a small space between each letter so the text is more readable*/
+}
+
+/*styling to prevent chrome's yellow colour input field after autocomplete*/
+input:-webkit-autofill {
+-webkit-box-shadow: inset 0px 0px 0px 100px #f7f7f7 !important;
+}
+/*styling for our select menus */
+select{
+color: #000; 
+width:100%; 
+padding: 1px;
+font-size: 1.7rem;
+border: 0;
+border-radius: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+height: 35px;
+border: 1px solid #ccc;
+background: #e6e6e6;
+
+}
+
+.btn-send{
+margin-top: 15px;
+}
+
+.hidden { display: none; }
+/******************************************************form errors styling****************************************************/
+#contact_form_errors{
+margin-bottom: 40px;
+
+}
+.error_alert_message{
+color: red;
+font-size: 1.7rem;
+}
+#contact_form_errors ul{
+width: 95%;
+margin: 0px 3% 0px 25px;
+list-style: disc !important;
+}
+.field_with_errors input[type="text"], .field_with_errors textarea{
+box-shadow: inset 0px 0px 0px 100px #fbc7c7 !important;
+-moz-box-shadow: inset 0px 0px 0px 100px #fbc7c7 !important;
+-webkit-box-shadow: inset 0px 0px 0px 100px #fbc7c7 !important;
+border: 2px solid red !important; 
+}
+.field_with_errors input[type="text"]:focus, .field_with_errors textarea:focus{
+box-shadow: inset 0px 0px 0px 100px #fff !important;
+-moz-box-shadow: inset 0px 0px 0px 100px #fff !important;
+-webkit-box-shadow: inset 0px 0px 0px 100px #fff !important;
+}
+
+.alert_message{
+padding-top: 15px;
+text-align: center;
+font-size: 1.8rem;
+}

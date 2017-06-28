@@ -1,3 +1,267 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/******************************styling for index view of pages controller******************************************/
+
+/*styling for profile pic in index view*/
+.profile_image_container{
+margin: 30px auto 20px auto;
+overflow: hidden;
+width: 200px;
+height: 200px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+
+
+/*styling for "about" list in index view*/
+
+.about_list_heading{
+border-bottom: solid 2px #6b6d70;
+padding-bottom: 5px;
+text-transform: uppercase;
+width: 180px;
+
+}
+
+.qualification_title{
+color: #0088fc;
+}
+.about_list_item_description{
+padding-top: 12px;
+}
+
+.normal_list{
+width: 84%;
+margin: 0px 4% 0px 20px;
+list-style: disc !important;
+}
+
+
+.about-list{
+margin-top: 20px;
+}
+
+.about-list > li {
+position: relative; 
+margin-bottom:30px;
+text-align: left;
+padding-left: 80px;
+list-style: none;
+min-height: 80px;
+}
+
+.inline_heading{
+line-height: 2.3rem;
+font-size: 1.6rem;
+}
+
+.inline_description{
+font-size: 1.5rem;
+word-wrap: break-word;
+}
+
+.about-list .about-icon {
+width: 58px;
+height: 58px;
+text-align: center;
+line-height: 56px;
+color: #555555;
+border: 2px solid #0088fc;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+-webkit-transition: all ease-in .4s;
+-moz-transition: all ease-in .4s;
+-o-transition: all ease-in .4s;
+-ms-transition: all ease-in .4s;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.about-icon .fa {
+font-size: 23px;
+line-height: 56px;  
+}
+
+
+.about-list > li:hover .about-icon {
+background: #0088fc;
+color: #fff;
+}
+
+@media (max-width: 460px) {  
+.about-list .about-icon {
+width: 38px;
+height: 38px;
+line-height: 36px;
+}
+.about-list > li {
+position: relative; 
+margin-bottom:8%;
+padding-left: 45px;
+}
+.about-icon .fa {
+font-size: 18px;
+line-height: 36px;  
+}
+}
+
+
+/******************************styling for skills view of pages controller******************************************/
+/*styling for Skill BAR*/
+
+#skills{
+padding-top: 30px;
+}
+
+.skill_title, .percentage_of_skill{
+display: block;
+font-size: 1.7rem;
+font-weight: bold;
+}
+
+.top_row{
+padding-bottom: 5px;
+}
+
+.skill_container{
+margin: 10px 0px 20px 0px;
+padding: 17px 0px;
+background: #babec1;
+-webkit-border-radius:10px;
+-moz-border-radius: 10px;
+border-radius: 10px; 
+}
+
+.percentage_of_skill{
+text-align: right;
+}
+
+.skill_bar_outer{
+width: 99%;
+height: 16px;
+padding: 2px 2px;
+-webkit-box-sizing: 	content-box;
+-moz-box-sizing: 	content-box;
+box-sizing: 		content-box;
+background: #2c5a81;
+-webkit-border-radius:10px;
+-moz-border-radius: 10px;
+border-radius: 10px; 
+}
+
+.skill_bar_inner{
+position: relative;
+margin-top: 0px;
+height: 16px;
+-webkit-border-radius:8px;
+-moz-border-radius: 8px;
+border-radius: 8px; 
+z-index: 2;
+-webkit-box-shadow: 	inset 0px -2px 7px 1px rgba(0, 0, 0, .3), inset 0px 2px 4px 1px rgba(24, 24, 24, 0.3),  inset 0px 2px 4px -1px rgba(0, 0, 0, .4),inset 0px -3px 8px -2px rgba(255, 255, 254, .9);
+-moz-box-shadow: 	inset 0px -2px 7px 1px rgba(0, 0, 0, .3), inset 0px 2px 4px 1px rgba(24, 24, 24, 0.3),  inset 0px 2px 4px -1px rgba(0, 0, 0, .4), inset 0px -3px 8px -2px rgba(255, 255, 254, .9);
+box-shadow:  		inset 0px -2px 7px 1px rgba(0, 0, 0, .3), inset 0px 2px 4px 1px rgba(24, 24, 24, 0.3),  inset 0px 2px 4px -1px rgba(0, 0, 0, .4),inset 0px -3px 8px -2px rgba(255, 255, 254, .9);
+-moz-animation: increase .5s linear;
+-o-animation: increase .5s linear;
+-webkit-animation: increase .5s linear;
+animation: increase .5s linear;
+}
+
+
+.skill_bar_inner.light_blue{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70bdf4+1,39a3f9+100 */
+background: rgb(112,189,244); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(112,189,244,1) 1%, rgba(57,163,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(112,189,244,1) 1%,rgba(57,163,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(112,189,244,1) 1%,rgba(57,163,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70bdf4', endColorstr='#39a3f9',GradientType=0 ); /* IE6-9 */
+}
+.skill_bar_inner.blue{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5cb3f9+1,0088fc+100 */
+background: rgb(92,179,249); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(92,179,249,1) 1%, rgba(0,136,252,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(92,179,249,1) 1%,rgba(0,136,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(92,179,249,1) 1%,rgba(0,136,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb3f9', endColorstr='#0088fc',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.skill_bar_inner.width_60{
+	width: 60%;
+}
+.skill_bar_inner.width_65{
+	width: 65%;
+}
+.skill_bar_inner.width_70{
+	width: 70%;
+}
+.skill_bar_inner.width_75{
+	width: 75%;
+}
+.skill_bar_inner.width_80{
+	width: 80%;
+}
+.skill_bar_inner.width_85{
+	width: 85%;
+}
+.skill_bar_inner.width_90{
+	width: 90%;
+}
+.skill_bar_inner.width_92{
+	width: 92%;
+}
+
+
+@-moz-keyframes increase {
+0%{width: 5%;}
+100%{width: 60%;}
+}
+@-o-keyframes increase {
+0%{width: 5%;}
+100%{width: 60%;}
+}
+@-webkit-keyframes increase {
+0%{width: 5%;}
+100%{width: 60%;}
+}
+@keyframes increase {
+0%{width: 5%;}
+100%{width: 60%;}
+}
+
+/************************************styling for works section**************************************/
+/*owl carousel*/
+#dublin_inquirer_carousel{
+padding-top: 25px;
+width: 90%;
+margin: 0 auto;
+}
+
+.owl-theme .owl-controls .owl-page span{
+width: 15px;
+height: 15px;
+}
+
+/*style for indicator light on carousel*/
+.owl-page.active span{
+background: #0088fc !important;
+}
+.thumbnail{
+background: none !important;
+-webkit-box-shadow: 	none !important;
+-moz-box-shadow: 	none !important;
+box-shadow: 		none !important;
+border: 0px;
+outline: 0px;
+}
+
+.caption{
+color: #fff !important;
+}
+.caption h3{
+text-align: center;
+}
+.carousel_phone{
+padding: 0px 10px;
+}

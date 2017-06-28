@@ -14,3 +14,223 @@
 
 @import "bootstrap";
 @import "bootstrap-sprockets";
+@import "reset_styles";
+@import "animate";
+@import "font-awesome";
+
+
+@import "header";
+@import "footer";
+@import "font_faces";
+
+@import "scroll_styles";
+@import "logo";
+
+@import "pages";
+
+@import "button_styles";
+@import "forms";
+@import "sticky_notes";
+
+
+
+/* The styles contained in this file are for the main layout application.html.erb and also those styles
+ * which are common to all controllers ie the pages, contacts, and sticky_notes controllers
+ */
+
+body{
+position: relative;
+font-family: 'Raleway', sans-serif !important;
+color: #000;
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+background: #fff;
+z-index: 1;
+line-height: 2.3rem;
+letter-spacing: .6px;
+}
+
+/*the main container in application.html.erb layout page where all views will be inserted*/
+#main_container{
+padding: 50px 0px 0px 0px !important;
+box-sizing: border-box;
+}
+
+.section_wrapper{
+background: url(/assets/keyboard-background.jpg) no-repeat center center fixed;
+background-size: cover;
+color: #ffffff;
+overflow: hidden; 
+z-index: 5;
+}
+
+#create_contact_section{
+min-height: 800px;
+}
+
+#dublin_inquirer_section.section_wrapper{
+background: url(/assets/mobile-background.jpg) no-repeat center center fixed;
+}
+#todo_app_section.section_wrapper{
+background: url(/assets/angular-background.jpg) no-repeat center center fixed;
+}
+
+#skills_section, #virtual_realty_section {
+padding: 30px 0px 10px 0px;
+}
+
+#react_app_section.section_wrapper{
+background: url(/assets/react-background.jpg) no-repeat center center fixed;
+}
+
+.sticky_note_section.section_wrapper{
+background: url(/assets/bricks.jpg) repeat center center fixed;
+}
+
+/*a class for adding padding to the content of some sections*/
+.section_content{
+padding-top: 30px;
+padding-bottom: 30px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*use a black overlay on some sections on top of the background image for that section*/
+.overlay_black{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.91+0,0.36+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.91) 0%, rgba(0,0,0,0.36) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0.36) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0.36) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8000000', endColorstr='#5c000000',GradientType=0 ); /* IE6-9 */
+}
+
+/*a more even (in terms of transparency) black overlay*/
+.overlay_black_even{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.73+0,0.58+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.73) 0%, rgba(0,0,0,0.58) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.58) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.58) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba000000', endColorstr='#94000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*****************************************general styles********************************************/
+.padding_top{
+padding-top: 40px;	
+}
+
+.blue_text{
+color: #0088fc !important;	
+}
+
+
+/****************************************styling for heading tags************************************/
+h1{
+font-size: 2.8rem;
+color: red !important;
+}
+
+h3{
+font-size: 1.7rem;
+}
+
+/******************************************h2 title tags**********************************************/
+.title-dark, .title-light{
+margin: 10px auto 10px auto;
+width: 360px;
+max-width: 96%;
+display: block;
+text-align: center;
+
+}
+.title-dark h2, .title-light h2{
+position: relative;
+border-bottom: solid 3px #e3e4e4;
+line-height: 1.1;
+margin-bottom: 0;
+padding-bottom: 10px;
+vertical-align: middle;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+text-align: center;
+font-size: 2.4rem;
+
+cursor: pointer;
+transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+}
+
+.title-dark h2 {
+border-bottom: solid 3px #5a5a5a;
+color: #5a5a5a;
+}
+
+.title-light h2{
+color: #cacbcb;
+}
+
+/*styling for the colored line which sits in the middle of the bottom-border of the title h2 tag*/
+.title-dark h2:after, .title-light h2:after {
+background: none repeat scroll 0 0 #0088fc;
+bottom: -3px;
+content: "";
+height: 3px;
+left: 50%;
+margin-left: -25px;
+position: absolute;
+transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+width: 50px;
+}
+
+
+.title-dark h2:hover, .title-light h2:hover{ 
+color: #0088fc;
+}
+
+
+.title-dark h2:hover:after, .title-light h2:hover:after { 
+left: 0;
+margin-left: 0px;
+width: 100%;
+transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+}
+
+
+.sub-head-light{
+display: block;
+text-align: center;
+letter-spacing: .6px;
+font-size: 1.6rem;
+font-weight: normal !important;
+margin-bottom: 20px;
+padding: 10px 0px;
+}
+/********************************************************************************************/
+/*create an extra media query for extra small screens, following on from the existing bootstrap grid styles*/
+@media (max-width: 460px){
+.col-xxs-12{
+	width: 100%;
+}
+.col-xxs-8{
+	width: 66.666666%;
+}
+.col-xxs-6{
+	width: 50%;
+}
+.col-xxs-4{
+	width: 33.333333%;
+}
+.col-xs-offset-1{
+margin-left: 0% !important;	
+
+}
+}
+
