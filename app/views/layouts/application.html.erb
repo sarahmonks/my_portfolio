@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: 'partials/header' %>
+
+   <div id="main_container" class="container-fluid">   
+        <%= yield %>
+    </div>
+    <%= render partial: 'partials/scroll_to_top' %>
+    <%= render partial: 'partials/footer' %>
   </body>
 </html>

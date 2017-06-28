@@ -1,0 +1,23 @@
+<header class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fa fa-navicon"></i>
+            </button>
+            <%= render partial: 'partials/logo' %>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <nav>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-link"><%= active_link_to "Home", root_path, active: :exclusive %></li>
+                    <li class="navbar-link"><%= active_link_to "Works", pages_works_path %></li>
+                    <li class="navbar-link"><%= active_link_to "Skills", pages_skills_path %></li>
+ 
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+      
+      
+      

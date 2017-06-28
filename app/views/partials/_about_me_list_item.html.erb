@@ -1,0 +1,35 @@
+<li class="wow <%= bootstrap_animation %>" data-wow-delay=".3s">
+
+   	<%= render partial: 'partials/about_list_icon', :locals => {:icon => icon} %>
+   	<div>
+       	<h4><%= item['title'] %></h4>
+        <% if list_type == 'education' %>
+             <p class="qualification_title"><%= item['qualification'] %></p>
+        <% end %>   
+
+
+       	<% item['description_paragraphs'].each do |paragraph| %>
+       	    <p class="about_list_item_description"><%= paragraph.html_safe %></p>
+       	<% end %>
+       	<%# Check if the skills_list array contains anything and if it does then loop through to display each list item %>
+       	<% if item['skills_list'].length > 0 %>
+           	<p class="about_list_item_description">
+                <% if list_type == 'work_experience' %>
+                     Skills used in this project:
+                <% else %>
+                     In this course I developed skills such as:
+                <% end %>        
+            </p>
+           	<ul class="normal_list">
+               	<% item['skills_list'].each do |skill| %>
+               	    <li><%= skill %></li>
+               	<% end %> 
+           	</ul>
+       	<% end %>
+   	</div>
+
+
+</li>
+
+      
+      
