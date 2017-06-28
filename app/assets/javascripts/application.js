@@ -18,3 +18,5 @@
 //= require turbolinks
 //= require owl.carousel
 //= require_tree .
+//= require anime.min
+//= require wow

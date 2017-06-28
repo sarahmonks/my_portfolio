@@ -1,23 +1,114 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
-
-<div id="home_section" class="section_wrapper">
+<div id="dublin_inquirer_section" class="section_wrapper">
     <div class="overlay_black">
-      		<div class="section_content container-fluid">
+        <div class="section_content container-fluid">
+               
+              <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['dublin_inquirer_section']} %>
 
-            <div class="profile_image_container wow bounceIn">
-              <%= image_tag("sarah_monks.jpg", size: "210x210", :alt => "Sarah Monks") %>
-            </div>
 
-  			<%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['home_section']} %>
+
             <div class="row">
-                <div id="scroll-down"  class="col-md-2 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" >
-                    <a href="#about_section" class="btn btn-large btn-blue btn-radius page-scroll"><i class="fa fa-angle-double-down"></i> Scroll Down</a>
-                </div>
-            </div>
+                   <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center bounceIn ">
+                       <!-- app store buttons -->
+                        <%= render partial: 'partials/app_store_button', :locals => {:app_button_info => app_button_info['apple']} %>
+                <%= render partial: 'partials/app_store_button', :locals => {:app_button_info => app_button_info['android']} %>
 
+                  </div><!--End app-button-div-->
+            </div>                      
+
+               <div id="dublin_inquirer_carousel" class="owl-carousel owl-theme row wow slideInLeft">
+                <% di_app_screenshots.each do |screenshot| %>
+                    <div class="item">
+                        <div class="thumbnail">
+                            <%= image_tag("#{screenshot['img_src']}", size: "407x705", :alt => "#{screenshot['img_title']}", class: "img-responsive carousel_phone") %>
+                                  
+                            <div class="caption">
+                                <h3><%= screenshot['img_title'] %></h3>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div><!--/owl carousel -->
+          
+        </div><!--/container -->
+    </div>
+</div>
+
+<div id="virtual_realty_section">
+    <div class="container-fluid">
+        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['virtual_realty_section']} %>
+        <div class="row wow slideInRight">      
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+                <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['virtual_realty']} %>
+            </div>      
+        </div> 
+        <div class="row wow bounceIn text-center">            
+            <%= link_to "View website","http://www.gamuzic.com/virtual_realty", :target => "_blank", class: "btn btn-blue btn-blue-text" %>
+        </div>            
+     </div>
+</div>
+
+<div id="todo_app_section" class="section_wrapper">
+    <div class="overlay_black_even">
+        <div class="section_content container-fluid">
+            <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['todo_app_section']} %>
+
+            <div class="row wow slideInLeft">      
+                <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['todo_app']} %>
+                </div>      
+            </div>  
+            <div class="row wow bounceIn text-center">      
+                <%= link_to "View app","http://www.gamuzic.com/todo", :target => "_blank", class: "btn btn-blue" %>
+            </div>  
         </div>
+    </div>
+</div>
+
+<div id="alien_relatives_section">
+    <div class="section_content container-fluid">
+        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['alien_relatives_section']} %>
+
+        <div class="row wow slideInRight">      
+            <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['alien_relatives']} %>
+            </div>  
+        </div>  
+        <div class="row wow bounceIn text-center">      
+            <%= link_to "View app","http://www.gamuzic.com/alien_relatives", :target => "_blank", class: "btn btn-blue btn-blue-text" %>   
+        </div>  
+    </div>
+</div>
+
+<div id="react_app_section" class="section_wrapper">
+    <div class="overlay_black">
+        <div class="section_content container-fluid">
+            <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['react_app_section']} %>
+
+            <div class="row wow slideInLeft">      
+                <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['react_app']} %>
+                </div>      
+            </div>  
+            <div class="row wow bounceIn text-center">      
+                <%= link_to raw("<i class='fa fa-github'></i>  View code"),"https://github.com/sarahmonks/react_mp3_player", :target => "_blank", class: "btn btn-blue" %>
+            </div>  
+        </div>
+     </div>
+</div>
+
+<div id="noteboard_section">
+    <div class="section_content container-fluid">
+        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['noteboard_section']} %>
+        <div class="row wow slideInLeft">      
+            <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <%= link_to(image_tag("#{showcase_image_data['noteboard_app']['img_src']}", 
+                    size: "#{showcase_image_data['noteboard_app']['width']}x#{showcase_image_data['noteboard_app']['height']}", 
+                    :alt => "#{showcase_image_data['noteboard_app']['img_alt']}", 
+                     class: "img-responsive"), controller: 'sticky_notes' ) %>
+            </div>      
+        </div>  
+        <div class="row wow bounceIn text-center">      
+            <%= link_to raw("View App"), sticky_notes_path , class: "btn btn-blue btn-blue-text" %>
+        </div>  
     </div>
 </div>

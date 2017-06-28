@@ -1,23 +1,34 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
-
-<div id="home_section" class="section_wrapper">
-    <div class="overlay_black">
-      		<div class="section_content container-fluid">
-
-            <div class="profile_image_container wow bounceIn">
-              <%= image_tag("sarah_monks.jpg", size: "210x210", :alt => "Sarah Monks") %>
-            </div>
-
-  			<%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['home_section']} %>
-            <div class="row">
-                <div id="scroll-down"  class="col-md-2 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" >
-                    <a href="#about_section" class="btn btn-large btn-blue btn-radius page-scroll"><i class="fa fa-angle-double-down"></i> Scroll Down</a>
+<div id="skills_section">
+  <div class="container-fluid">
+    <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['skills_section']} %>
+    <div id="skills" class="row ">
+      <% skills.each_with_index do |(key, value), index| %>
+           
+              <% if index % 2 == 0 %>
+                <div class="col-md-offset-1 col-sm-offset-1 col-md-5 col-sm-5 col-xs-6 col-xxs-12">
+              <% else %>
+                <div class="col-md-5 col-sm-5 col-xs-6 col-xxs-12 ">
+              <% end %>
+                    <div class="row skill_container ">
+                        <div class="container-fluid">
+                                <div class="row top_row">
+                                      <p class="skill_title col-lg-8 col-md-8 col-sm-8 col-xs-8"><%= key %></p>
+                                      <span class="percentage_of_skill col-lg-4 col-md-4 col-sm-4 col-xs-4"><%= value %>%</span>
+                                   
+                                </div>
+                                <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                          <div class="skill_bar_outer">
+                                            <div class="skill_bar_inner blue width_<%= value %>"></div>
+                                          </div>
+                                        </div>
+                                </div>    
+                        </div>   
+                    </div> 
                 </div>
-            </div>
-
-        </div>
+      <% end %>
     </div>
 </div>
+
+
+</div><!--/Skills Section End -->

@@ -16,3 +16,45 @@
         </div>
     </div>
 </div>
+<div id="about_section">
+    <div class="section_content container-fluid">
+        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['about_section']} %>
+
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-sm-6">
+                <h3 class="about_list_heading wow fadeInLeft">Personal Details</h3>
+                <ul class="about-list">
+
+                    <li class="wow fadeInLeft" data-wow-delay=".3s">
+ 
+                        <%= render partial: 'partials/about_list_icon', :locals => {:icon => 'fa-info'} %>
+
+                        <div class="row">
+                            <h4 class="inline_heading col-md-4 col-sm-4 col-xs-4 col-xxs-6">Nationality:</h4><p class="inline_description col-md-8 col-sm-8 col-xs-8 col-xxs-6"> Irish</p>
+                            <h4 class="inline_heading col-md-4 col-sm-4 col-xs-4 col-xxs-12">Email:</h4><p class="inline_description col-md-8 col-sm-8 col-xs-8 col-xxs-12"> monks.sarah@gmail.com</p>
+                        </div>                          
+                    </li>
+
+                </ul>
+                <h3 class="about_list_heading wow fadeInLeft">Work Experience</h3>
+                 <ul class="about-list">
+                    <% work_experience.each do |item| %>
+                         <%= render partial: 'partials/about_me_list_item', :locals => {:item => item, :icon => 'fa-wrench', :bootstrap_animation => 'fadeInLeft', :list_type => 'work_experience'} %>
+
+                    <% end %>
+                </ul>
+          
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+                <h3 class="about_list_heading wow fadeInRight">Education</h3>
+                <ul class="about-list">
+                    <% education.each do |item| %>
+                         <%= render partial: 'partials/about_me_list_item', :locals => {:item => item, :icon => 'fa-graduation-cap', :bootstrap_animation => 'fadeInRight', :list_type => 'education'} %>
+
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
