@@ -26,8 +26,25 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+
+
+
+  
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+  user_name:            'monks.sarah@gmail.com',
+  password:             '52753268Sm$',
+  authentication:       'plain',
+  enable_starttls_auto: true }
+
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
 
   config.action_mailer.perform_caching = false
 
@@ -44,6 +61,12 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+
+  config.assets.enabled = true
+config.assets.paths << Rails.root.join('/app/assets/fonts')
+config.assets.paths << Rails.root.join('/app/assets/javascripts')
+
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
