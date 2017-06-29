@@ -1,0 +1,34 @@
+<div id="create_contact_section" class="section_wrapper">
+    <div class="overlay_black">
+        <div class="section_content">
+            <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-light wow animated bounce">
+                              <h2>Contact</h2>
+                      </div>
+                                 
+                    </div>
+            </div>
+
+            <div class="row">
+            	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+
+              		<% flash.each do |key, value| %>
+                		<p class="alert_message wow animated bounce">
+                    			<%= value %>
+               			</p>
+              		<% end %>
+                 
+            	</div>
+
+            </div>
+             <div class="row text-center padding_top">
+
+                  <%= link_to raw("<i class='fa fa-caret-left'></i> Back to form"), new_contact_path, class: "btn btn-blue" %>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

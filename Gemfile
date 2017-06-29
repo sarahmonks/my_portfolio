@@ -26,6 +26,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
+gem 'mail_form'
+gem 'simple_form'
 
 gem 'owlcarousel-rails', '~> 1.1.3.3'
 gem 'active_link_to'
