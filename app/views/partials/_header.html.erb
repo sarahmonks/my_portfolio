@@ -12,7 +12,7 @@
                     <li class="navbar-link"><%= active_link_to "Home", root_path, active: :exclusive %></li>
                     <li class="navbar-link"><%= active_link_to "Works", pages_works_path %></li>
                     <li class="navbar-link"><%= active_link_to "Skills", pages_skills_path %></li>
- 
+                    <li class="navbar-link"><%= active_link_to "Contact", new_contact_path, active: /^\/contacts/ %></li>
                 </ul>
             </nav>
         </div>
