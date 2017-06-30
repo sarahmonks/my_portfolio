@@ -1,4 +1,5 @@
 $(document).ready(function(){
+              $('.hide_before_doc_ready').css('display','block');
               //I would like the background image of the contact page to stretch to at least 100% of the height of the screen 
               //ie I would normally do css min-height: 100% of its parent.
               //however its parent (being the main_container) doesnt have a fixed height so therefore min-height:100% on its child element #contact_section did not work.
@@ -13,7 +14,6 @@ $(document).ready(function(){
               		$(this).blur();
               
              });
-
             	$('a.page-scroll').click(function() {
                     	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                       		var target = $(this.hash);

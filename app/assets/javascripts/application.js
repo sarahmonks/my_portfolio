@@ -15,6 +15,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 
-//= require turbolinks
+//turbolinks
 //= require owl.carousel
 //= require_tree .

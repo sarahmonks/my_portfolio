@@ -52,6 +52,14 @@ background: #fff;
 z-index: 1;
 line-height: 2.3rem;
 letter-spacing: .6px;
+
+}
+
+/*fix  for the flicker of elements (on page load) that are being animated with bootstrap*/
+/*we will hide the elements until documnet ready fires, then we will display them with animations*/
+.hide_before_doc_ready{
+	
+display: none;
 }
 
 /*the main container in application.html.erb layout page where all views will be inserted*/
@@ -235,4 +243,30 @@ margin-left: 0% !important;
 
 }
 }
-
+/*=================================================================
+Custom animation styling to add a delay onto an animation.
+delay-short, delay-med, and delay-long are to be added to the 
+html element to be animated along with the animated class.
+The .animated class is defined in animate.css
+===================================================================*/
+.animated.delay-short{
+	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-ms-animation-delay: .2s;
+}
+.animated.delay-med{
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-o-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-ms-animation-delay: .3s;
+}
+.animated.delay-long{
+	animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-ms-animation-delay: .4s;
+}
