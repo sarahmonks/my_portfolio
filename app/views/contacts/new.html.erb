@@ -7,6 +7,12 @@
 				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 			
 				  	<%= form_for @contact do |f| %>
+              			<% if flash['error'] %>
+                			<p class="error_alert_message">
+                    			<%= flash['error'] %>
+               				</p>
+              			<% end %>
+
 						<% if @contact.errors.any? %>
 
 				    		<div id="contact_form_errors">
@@ -25,13 +31,13 @@
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<%= f.label :first_name, '* First name' %>
-					    				<%= f.text_field :first_name, :placeholder => "First name" , :required => true, class: "form-control" %>
+					    				<%= f.text_field :first_name, :placeholder => "First name" , :maxlength => 40, :required => true, class: "form-control" %>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<%= f.label :last_name, 'Last name' %>
-					    				<%= f.text_field :last_name, :placeholder => "Last name" , class: "form-control" %>
+					    				<%= f.text_field :last_name, :placeholder => "Last name" , :maxlength => 40, class: "form-control" %>
 								</div>
 							</div>
 						</div>
@@ -42,13 +48,13 @@
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<%= f.label :email, '* Email' %>
-					    				<%= f.text_field :email, :placeholder => "Email" , :required => true, class: "form-control" %>
+					    				<%= f.text_field :email, :placeholder => "Email" , :maxlength => 255, :required => true, class: "form-control" %>
 								</div>
 							</div>	
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<%= f.label :phone_number, 'Phone number' %>
-					    				<%= f.text_field :phone_number, :placeholder => "Phone number" , class: "form-control" %>
+					    				<%= f.text_field :phone_number, :placeholder => "Phone number" , :maxlength => 20, class: "form-control" %>
 								</div>
 							</div>	
 							
@@ -57,7 +63,7 @@
 							<div class="col-md-12 col-sm-12">
 								<div class="form-group">
 									<%= f.label :message, '* Message' %>
-					    				<%= f.text_area :message, :placeholder => "Your message" ,  :required => true,  rows: "4",  class: "form-control" %>
+					    				<%= f.text_area :message, :placeholder => "Your message" , :maxlength => 2000, :required => true,  rows: "4",  class: "form-control" %>
 								</div>
 							</div>	
 							<div class="col-md-12">

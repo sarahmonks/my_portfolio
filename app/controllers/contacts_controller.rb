@@ -8,15 +8,19 @@ class ContactsController < ApplicationController
 	def create 
 		@contact = Contact.new(contact_params)
 		if @contact.valid?
-    		ContactMailer.contact_me(@contact).deliver_now
-      		redirect_to new_contact_url, notice: "Message received, thanks!"
+    
+    		if ContactMailer.contact_me(@contact).deliver_now
+	      		flash.now[:notice] = 'Thank you for your message. I will contact you soon!'
+	    	else
+	      		flash.now[:error] = 'There was a problem sending your message. Please try again!'
+	      		render :new
+	    	end
+      
     	else
+
       		render :new
     	end
-	
-
 	end
-
 
 
 	private
