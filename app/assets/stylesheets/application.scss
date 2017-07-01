@@ -67,7 +67,11 @@ display: none;
 padding: 50px 0px 0px 0px !important;
 box-sizing: border-box;
 }
-
+@media (max-width: 767px) {
+#main_container{
+padding-top: 0px !important;
+}
+}
 .section_wrapper{
 background: url(/assets/keyboard-background.jpg) no-repeat center center fixed;
 background-size: cover;
