@@ -233,7 +233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb3f9', end
 /************************************styling for works section**************************************/
 /*owl carousel*/
 #dublin_inquirer_carousel{
-padding: 25px 4% 0px 4%;
+padding-top: 25px;
 width: 90%;
 
 margin: 0 auto;
@@ -241,7 +241,7 @@ margin: 0 auto;
 @media (max-width: 450px) {  
 #dublin_inquirer_carousel{
 
-
+width: 98%;
 
 }
 }
