@@ -31,6 +31,6 @@
 
 en:
   hello: "Hello world"
-  message_mailer:
+  contact_mailer:
     contact_me:
       subject: "Sarah Monks Contact Form"

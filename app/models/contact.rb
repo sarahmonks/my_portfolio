@@ -11,11 +11,4 @@ class Contact < ApplicationRecord
 
   validates_format_of  :email, :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
-    	def headers
-      	{
-        		:subject => "Sarah Monks Contact Form",
-        		:to => "monks.sarah@gmail.com",
-        		:from => %("#{first_name}" <#{email}>)
-      	}
-    	end
 end

@@ -85,7 +85,7 @@ module PagesHelper
 									'img_src' => '/assets/todo-showcase.png', 'width' => '760', 'height' => '783'},
 								'alien_relatives' => 
 								{'img_alt' => 'Alien Relatives', 'url' => 'http://www.gamuzic.com/alien_relatives', 
-								'img_src' => '/assets/alien_relatives_mac_narrow.jpg', 'width' => '1724', 'height' => '1408'},
+								'img_src' => '/assets/alien_relatives_mac_narrow.png', 'width' => '1724', 'height' => '1408'},
 								'react_app' => 
 								{'img_alt' => 'React App', 'url' => 'http://www.gamuzic.com/todo', 
 									'img_src' => '/assets/react-showcase1.png', 'width' => '760', 'height' => '624'},
