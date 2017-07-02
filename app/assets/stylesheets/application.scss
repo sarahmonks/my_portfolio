@@ -64,16 +64,18 @@ display: none;
 
 /*the main container in application.html.erb layout page where all views will be inserted*/
 #main_container{
+/*add 50 padding-top on main container (same height as the navbar) as the navbar is fixed so we do this to push the content down*/ 
 padding: 50px 0px 0px 0px !important;
 box-sizing: border-box;
 }
 @media (max-width: 767px) {
+/*set the padding-top to be zero on main container for small devices as we are changing the navbar to be position: relative on small devices*/ 
 #main_container{
 padding-top: 0px !important;
 }
 }
 .section_wrapper{
-background: url(/assets/keyboard-background.jpg) no-repeat center center fixed;
+background: url(/assets/keyboard_background.jpg) no-repeat center center fixed;
 background-size: cover;
 color: #ffffff;
 overflow: hidden; 
@@ -86,18 +88,32 @@ min-height: 800px;
 }
 
 #dublin_inquirer_section.section_wrapper{
-background: url(/assets/mobile-background.jpg) no-repeat center center fixed;
-}
-#todo_app_section.section_wrapper{
-background: url(/assets/angular-background.jpg) no-repeat center center fixed;
+background: url(/assets/mobile_background.jpg) no-repeat center center fixed;
 }
 
 #skills_section, #virtual_realty_section {
 padding: 30px 0px 10px 0px;
 }
 
+
+
+@media (max-width: 1280px){
 #react_app_section.section_wrapper{
-background: url(/assets/react-background.jpg) no-repeat center center fixed;
+background: url(/assets/react_background.jpg) no-repeat center center fixed;
+}
+#todo_app_section.section_wrapper{
+background: url(/assets/angular_background.jpg) no-repeat center center fixed;
+}
+}
+
+
+@media (min-width: 1281px){
+#react_app_section.section_wrapper{
+background: url(/assets/react_background_lrg.jpg) no-repeat center center fixed;
+}
+#todo_app_section.section_wrapper{
+background: url(/assets/angular_background_lrg.jpg) no-repeat center center fixed;
+}
 }
 
 .sticky_note_section.section_wrapper{

@@ -67,28 +67,28 @@ module PagesHelper
 								'store_link' => 'https://itunes.apple.com/ie/app/dublin-inquirer/id1205172559'}}
 	end
 	def di_app_screenshots
-		di_app_screenshots = [{'img_title' => 'Home screen', 'img_src' => "dublin-inquirer1.png"}, 
-							{'img_title' => 'Read section', 'img_src' => "dublin-inquirer2.png"}, 
-							{'img_title' => 'News story', 'img_src' => "dublin-inquirer3.png"},
-							{'img_title' => 'Comments section', 'img_src' => "dublin-inquirer4.png"}, 
-							{'img_title' => 'Side menu', 'img_src' => "dublin-inquirer5.png"},
-							{'img_title' => 'Engage section', 'img_src' => "dublin-inquirer6.png"},
-							{'img_title' => 'Contribution section', 'img_src' => "dublin-inquirer7.png"},
-							{'img_title' => 'User account', 'img_src' => "dublin-inquirer8.png"}]
+		di_app_screenshots = [{'img_title' => 'Home screen', 'img_src' => "dublin_inquirer1.png"}, 
+							{'img_title' => 'Read section', 'img_src' => "dublin_inquirer2.png"}, 
+							{'img_title' => 'News story', 'img_src' => "dublin_inquirer3.png"},
+							{'img_title' => 'Comments section', 'img_src' => "dublin_inquirer4.png"}, 
+							{'img_title' => 'Side menu', 'img_src' => "dublin_inquirer5.png"},
+							{'img_title' => 'Engage section', 'img_src' => "dublin_inquirer6.png"},
+							{'img_title' => 'Contribution section', 'img_src' => "dublin_inquirer7.png"},
+							{'img_title' => 'User account', 'img_src' => "dublin_inquirer8.png"}]
 	end
 	def showcase_image_data
 		showcase_image_data = 	{'virtual_realty' => 
 								{'img_alt' => 'Virtual Realty', 'url' => 'http://www.gamuzic.com/virtual_realty', 
-									'img_src' => '/assets/vr-showcase.png', 'width' => '666', 'height' => '516'},
+									'img_src' => '/assets/vr_showcase.png', 'width' => '666', 'height' => '516'},
 								'todo_app' => 
 								{'img_alt' => 'Todo App', 'url' => 'http://www.gamuzic.com/todo', 
-									'img_src' => '/assets/todo-showcase.png', 'width' => '760', 'height' => '783'},
+									'img_src' => '/assets/todo_showcase.png', 'width' => '760', 'height' => '783'},
 								'alien_relatives' => 
 								{'img_alt' => 'Alien Relatives', 'url' => 'http://www.gamuzic.com/alien_relatives', 
-								'img_src' => '/assets/alien_relatives_mac_narrow.png', 'width' => '1724', 'height' => '1408'},
+								'img_src' => '/assets/alien_relatives_mac.png', 'width' => '1724', 'height' => '1408'},
 								'react_app' => 
 								{'img_alt' => 'React App', 'url' => 'http://www.gamuzic.com/todo', 
-									'img_src' => '/assets/react-showcase1.png', 'width' => '760', 'height' => '624'},
+									'img_src' => '/assets/react_showcase.png', 'width' => '760', 'height' => '624'},
 									'noteboard_app' => 
 								{'img_alt' => 'Noteboard App', 'url' => 'controller: "sticky_notes"', 
 									'img_src' => '/assets/note_board_showcase.png', 'width' => '760', 'height' => '783'}}

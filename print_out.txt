@@ -84,3 +84,19 @@ app/views/contact_me.html.erb
 <p>Email: <%= @email %></p>
 <p>Message: </p>
 <%= @body %>
+
+
+To view a preview of the email on localhost. 
+test/mailers/previews/contact_mailer_preview.rb
+# Preview all emails at http://localhost:3000/rails/mailers/contact_mailer
+class ContactMailerPreview < ActionMailer::Preview
+
+  def contact_me 
+    message = Contact.new first_name: 'marflar', 
+    			  last_name: 'monks',
+                          email: 'marflar@example.org',
+                          message: 'This is the body of the email'
+    ContactMailer.contact_me message
+  end
+
+end
