@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'pages/works'
   root 'pages#index'
 
+get 'contacts', to: 'contacts#new', as: 'new_message'
+get 'pages', to: 'pages#index'
+
 resources :sticky_notes
 resources :contacts
 end
