@@ -26,7 +26,7 @@ module PagesHelper
 
 			'todo_app_section' =>
 			{'section_title' => 'To do App', 
-			'section_intro_paragraph' => 'I built a "To Do" list application using Angular JS, HTML5 and CSS3',
+			'section_intro_paragraph' => 'I built a "To Do" list mobile application using Angular JS, HTML5 and CSS3.',
 			'title_style' => 'title-light'},
 			
 
@@ -39,7 +39,7 @@ module PagesHelper
 			'react_app_section' =>
 			{'section_title' => 'React Mp3 player', 
 			'section_intro_paragraph' => 'I built a simple mp3 player application using HTML5, CSS3, JavaScript, and React.js. 
-				<br><br>',
+				<br>I used the HTML5 Web audio API to enable the sounds to be played.<br>',
 			'title_style' => 'title-light'},
 			'contact_section' =>{'section_title' => 'Contact', 
 		'section_intro_paragraph' => 'Please use the contact form below to reach me.',
