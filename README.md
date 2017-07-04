@@ -1,24 +1,11 @@
-# README
+I built my portfolio website using Ruby on Rails, HTML, CSS, JavaScript and Bootstrap.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Ruby version
 
-* Ruby version
+: 2.3.3
 
-* System dependencies
+Rails version: 5.1.2
 
-* Configuration
+I used a Postgres database for the project.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
