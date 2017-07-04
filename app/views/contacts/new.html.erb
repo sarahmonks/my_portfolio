@@ -1,7 +1,10 @@
 <div id="contact_section" class="section_wrapper">
 	<div class="overlay_black">
 		<div class="section_content">
-			<%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['contact_section']} %>
+				<%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Contact', 
+                    :section_intro_paragraph => 'Please use the contact form below to reach me.',
+                    :title_style => 'title-light'} %>
 
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">

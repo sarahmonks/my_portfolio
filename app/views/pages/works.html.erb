@@ -2,15 +2,23 @@
     <div class="overlay_black">
         <div class="section_content container-fluid">
                
-              <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['dublin_inquirer_section']} %>
+                <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Dublin Inquirer App', 
+                    :section_intro_paragraph => 'I worked with a cross-functional team, planning, designing and building the following application for the Dublin Inquirer newspaper company and their subscribers. <br>I was lead developer on this project.
+                        <br><br>The app is now available on both the Apple App Store and the Google Play Store.',
+                    :title_style => 'title-light'} %>
 
 
 
             <div class="row">
                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center bounceIn ">
                        <!-- app store buttons -->
-                        <%= render partial: 'partials/app_store_button', :locals => {:app_button_info => app_button_info['apple']} %>
-                <%= render partial: 'partials/app_store_button', :locals => {:app_button_info => app_button_info['android']} %>
+                        <%= render partial: 'partials/app_store_button', 
+                            :locals => {:store_link => "https://itunes.apple.com/ie/app/dublin-inquirer/id1205172559", 
+                                        :store_name => "App Store", :button_icon => "fa-apple"} %>
+                        <%= render partial: 'partials/app_store_button', 
+                            :locals => {:store_link => "http://play.google.com/store/apps/details?id=com.dublininquirer.dublininquirerapp", 
+                                        :store_name => "Play Store", :button_icon => "fa-android"} %>
 
                   </div><!--End app-button-div-->
             </div>                      
@@ -35,10 +43,18 @@
 
 <div id="virtual_realty_section">
     <div class="container-fluid">
-        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['virtual_realty_section']} %>
+        <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Virtual Realty', 
+                    :section_intro_paragraph => 'I worked with a cross-functional team planning, designing and implementing a website to showcase an idea we had for a digital product we call "Virtual Realty".',
+                    :title_style => 'title-dark'} %>
         <div class="row wow slideInRight">      
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
-                <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['virtual_realty']} %>
+                <%= render partial: 'partials/showcase_image', 
+                            :locals => {:img_alt => 'Virtual Realty', 
+                            :url => 'http://www.gamuzic.com/virtual_realty', 
+                            :img_src => '/assets/vr_showcase.png', 
+                            :width => '666', 
+                            :height => '516'} %>
             </div>      
         </div> 
         <div class="row wow bounceIn text-center">            
@@ -50,11 +66,19 @@
 <div id="todo_app_section" class="section_wrapper">
     <div class="overlay_black_even">
         <div class="section_content container-fluid">
-            <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['todo_app_section']} %>
+            <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'To do App', 
+                    :section_intro_paragraph => 'I built a "To Do" list mobile application using Angular JS, HTML5 and CSS3.',
+                    :title_style => 'title-light'} %>
 
             <div class="row wow slideInLeft">      
                 <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
-                    <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['todo_app']} %>
+                    <%= render partial: 'partials/showcase_image', 
+                            :locals => {:img_alt => 'Todo App', 
+                            :url => 'http://www.gamuzic.com/todo', 
+                            :img_src => '/assets/todo_showcase.png', 
+                            :width => '760', 
+                            :height => '783'} %>
                 </div>      
             </div>  
             <div class="row wow bounceIn text-center">      
@@ -66,11 +90,21 @@
 
 <div id="alien_relatives_section">
     <div class="section_content container-fluid">
-        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['alien_relatives_section']} %>
+        <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Alien Relatives', 
+                    :section_intro_paragraph => 'I built the following desktop application using HTML5,CSS3, JavaScript, PHP (OOP) and mySQL. 
+                            <br><br>The application is called "Alien relatives" and its aim is to create a fun, uplifting experience for the user. <br>Firstly, the user is prompted to enter their name. 
+                            They are then informed of the "Alien tribe" they are related to (calculated based on the first letter of their name) and given a special wisdom message.',
+                    :title_style => 'title-dark'} %>
 
         <div class="row wow slideInRight">      
             <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-                <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['alien_relatives']} %>
+                    <%= render partial: 'partials/showcase_image', 
+                            :locals => {:img_alt => 'Alien Relatives', 
+                            :url => 'http://www.gamuzic.com/alien_relatives', 
+                            :img_src => '/assets/alien_relatives_mac.png', 
+                            :width => '1724', 
+                            :height => '1408'} %>
             </div>  
         </div>  
         <div class="row wow bounceIn text-center">      
@@ -82,11 +116,20 @@
 <div id="react_app_section" class="section_wrapper">
     <div class="overlay_black">
         <div class="section_content container-fluid">
-            <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['react_app_section']} %>
+            <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'React Mp3 player', 
+                    :section_intro_paragraph => 'I built a simple mp3 player application using HTML5, CSS3, JavaScript, and React.js. 
+                        <br>I used the HTML5 Web audio API to enable the sounds to be played.<br>',
+                    :title_style => 'title-light'} %>
 
             <div class="row wow slideInLeft">      
                 <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
-                    <%= render partial: 'partials/showcase_image', :locals => {:showcase_image_data => showcase_image_data['react_app']} %>
+                    <%= render partial: 'partials/showcase_image', 
+                            :locals => {:img_alt => 'React App', 
+                            :url => 'https://github.com/sarahmonks/react_mp3_player', 
+                            :img_src => '/assets/react_showcase.png', 
+                            :width => '760', 
+                            :height => '624'} %>
                 </div>      
             </div>  
             <div class="row wow bounceIn text-center">      
@@ -98,12 +141,15 @@
 
 <div id="noteboard_section">
     <div class="section_content container-fluid">
-        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['noteboard_section']} %>
+        <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Rails Noteboard app', 
+                    :section_intro_paragraph => 'I built the following simple CRUD application with Ruby on Rails. Please feel free to try it out!',
+                    :title_style => 'title-dark'} %>
         <div class="row wow slideInLeft">      
             <div class="col-md-offset-3 col-md-7 col-sm-offset-1 col-sm-10 col-xs-12">
-                    <%= link_to(image_tag("#{showcase_image_data['noteboard_app']['img_src']}", 
-                    size: "#{showcase_image_data['noteboard_app']['width']}x#{showcase_image_data['noteboard_app']['height']}", 
-                    :alt => "#{showcase_image_data['noteboard_app']['img_alt']}", 
+                    <%= link_to(image_tag("/assets/note_board_showcase.png", 
+                    size: "760x783", 
+                    :alt => "Noteboard App", 
                      class: "img-responsive"), controller: 'sticky_notes' ) %>
             </div>      
         </div>  

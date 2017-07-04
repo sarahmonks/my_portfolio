@@ -6,7 +6,10 @@
                   <%= image_tag("sarah_monks.jpg", size: "210x210", :alt => "Sarah Monks") %>
                 </div>
 
-      			<%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['home_section']} %>
+      			<%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'Sarah Monks', 
+                    :section_intro_paragraph => 'Web Developer | Web Designer | Mobile App Designer.',
+                    :title_style => 'title-light'} %>
                 <div class="row">
                     <div id="scroll-down"  class="col-md-2 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center" >
                         <a href="#about_section" class="btn btn-blue page-scroll"><i class="fa fa-angle-double-down"></i> Scroll Down</a>
@@ -18,7 +21,10 @@
 </div>
 <div id="about_section">
     <div class="section_content container-fluid">
-        <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['about_section']} %>
+            <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'About me', 
+                    :section_intro_paragraph => 'I am a technically and logically minded individual who is passionate about writing high quality code. I enjoy working individually and also with a team.',
+                    :title_style => 'title-dark'} %>
 
         <div class="row">
             <div class="col-md-5 col-md-offset-1 col-sm-6">

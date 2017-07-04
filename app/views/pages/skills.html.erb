@@ -1,6 +1,9 @@
 <div id="skills_section">
   <div class="container-fluid">
-    <%= render partial: 'partials/intro_section', :locals => {:section_intro_data => section_intro_info['skills_section']} %>
+    <%= render partial: 'partials/intro_section', 
+                    :locals => {:section_title => 'My Skills', 
+                    :section_intro_paragraph => 'I have a passion for web development and specialize in the following languages and frameworks.',
+                    :title_style => 'title-dark'} %>
     <div id="skills" class="row ">
       <% skills.each_with_index do |(key, value), index| %>
            
