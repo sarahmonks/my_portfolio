@@ -3,22 +3,22 @@ module AboutMeHelper
         education = [{'title' => 'Digital Skills Academy / 2015-2016',
                       'qualification' => 'B.Sc degree in Digital Design and Technology (Grade: 83%)',
                       'description_paragraphs' => 
-                                          ['I completed the coding stream on this course, in order to build on the programming skills I gained previous to the course.',
-                                           'I had the honour of serving as a “HERO” coder, working on two Industry Partner Projects (instead of just one).'],
+                       ['I completed the coding stream on this course, in order to build on the programming skills I gained previous to the course.',
+                        'I had the honour of serving as a “HERO” coder, working on two Industry Partner Projects (instead of just one).'],
                        'skills_list' => ['Working with a cross functional team.', 'Working to a formal design document.', 
-                                       'Using Agile & SCRUM methodologies.', 'UX & Concept Design skills.', 'Coding in several languages and frameworks (see skills)']               
+                        'Using Agile & SCRUM methodologies.', 'UX & Concept Design skills.', 'Coding in several languages and frameworks (see skills)']               
                      },
                      {'title' => 'Trinity College Dublin / 2005-2006',
                       'qualification' => 'Post Graduate Higher Diploma in Music & Media Technologies',
                       'description_paragraphs' => [],
                       'skills_list' => 
-                                          ['Video production and editing', 'Music production and composition', 'Music theory and aural training', 'Photoshop skills']                   
+                       ['Video production and editing', 'Music production and composition', 'Music theory and aural training', 'Photoshop skills']                   
                      },
                        {'title' => 'University College Dublin / 2000-2004',
                       'qualification' => 'BA (Hons) degree in Computer Science and Spanish',
                       'description_paragraphs' => 
-                                          ['Achievements: For my final thesis project, I designed and developed a tool for converting Ascii-based Phonetic 
-                                          alphabets into the International Phonetic Alphabet (IPA). <br>I used Java to implement this.'],
+                       ['Achievements: For my final thesis project, I designed and developed a tool for converting Ascii-based Phonetic 
+                        alphabets into the International Phonetic Alphabet (IPA). <br>I used Java to implement this.'],
                       'skills_list' => []                   
                      }
 
