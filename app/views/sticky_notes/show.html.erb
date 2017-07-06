@@ -1,22 +1,15 @@
 
 
 
-<div class="row">
-	
-<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-		<h1>My Blog</h1>
-		
-<div class="blog-container">
-			<p><%= @sticky_note.title %></p>
-
-			<p><%= @sticky_note.text %></p>
-			<p><%= @sticky_note.color %></p>
-		
+<div class="row">	
+	<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<h1>My Blog</h1>	
+	    <div class="blog-container">
+				<p><%= @sticky_note.title %></p>
+				<p><%= @sticky_note.text %></p>
+				<p><%= @sticky_note.color %></p>
 		</div>
-
 		<%= link_to 'Back', sticky_notes_path %>
 	</div>
-
-
 </div>
 
