@@ -2,17 +2,17 @@
     <div class="overlay_black">
       		<div class="section_content container-fluid">
 
-                <div class="profile_image_container delay-med animated bounceIn">
+                <div class="profile_image_container delay_med animated bounceIn">
                   <%= image_tag("sarah_monks.jpg", size: "210x210", :alt => "Sarah Monks") %>
                 </div>
 
       			<%= render partial: 'partials/intro_section', 
                     :locals => {:section_title => 'Sarah Monks', 
                     :section_intro_paragraph => 'Web Developer | Web Designer | Mobile App Designer.',
-                    :title_style => 'title-light'} %>
+                    :title_style => 'title_light'} %>
                 <div class="row">
-                    <div id="scroll-down"  class="col-md-2 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center" >
-                        <a href="#about_section" class="btn btn-blue page-scroll"><i class="fa fa-angle-double-down"></i> Scroll Down</a>
+                    <div id="scroll_down"  class="col-md-2 col-md-offset-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center" >
+                        <a href="#about_section" class="btn btn_blue page_scroll"><i class="fa fa-angle-double-down"></i> Scroll Down</a>
                     </div>
                 </div>
 
@@ -24,12 +24,12 @@
             <%= render partial: 'partials/intro_section', 
                     :locals => {:section_title => 'About me', 
                     :section_intro_paragraph => 'I am a technically and logically minded individual who is passionate about writing high quality code. I enjoy working individually and also with a team.',
-                    :title_style => 'title-dark'} %>
+                    :title_style => 'title_dark'} %>
 
         <div class="row">
             <div class="col-md-5 col-md-offset-1 col-sm-6">
                 <h3 class="about_list_heading wow fadeInLeft">Personal Details</h3>
-                <ul class="about-list">
+                <ul class="about_list">
 
                     <li class="wow fadeInLeft" data-wow-delay=".3s">
  
@@ -43,7 +43,7 @@
 
                 </ul>
                 <h3 class="about_list_heading wow fadeInLeft">Work Experience</h3>
-                 <ul class="about-list">
+                 <ul class="about_list">
                     <% work_experience.each do |item| %>
                          <%= render partial: 'partials/about_me_list_item', :locals => {:item => item, :icon => 'fa-wrench', :bootstrap_animation => 'fadeInLeft', :list_type => 'work_experience'} %>
 
@@ -54,7 +54,7 @@
 
             <div class="col-md-5 col-sm-6">
                 <h3 class="about_list_heading wow fadeInRight">Education</h3>
-                <ul class="about-list">
+                <ul class="about_list">
                     <% education.each do |item| %>
                          <%= render partial: 'partials/about_me_list_item', :locals => {:item => item, :icon => 'fa-graduation-cap', :bootstrap_animation => 'fadeInRight', :list_type => 'education'} %>
 

@@ -9,49 +9,45 @@ background: none !important;
 transition: all 0.2s ease;	
 }
 
-.btn-large {
-font-size: 1.2em;
-padding: 7px 12px;
-}
-.btn-blue {
+.btn_blue {
 color: #f1f3f3;
 border: 2px solid #0088fc;
 background-color: none;
 }
-.btn-blue.btn-blue-text {
+.btn_blue.btn_blue_text {
 color: #0088fc !important;
 }
 
-.btn-blue:hover {
+.btn_blue:hover {
 background: #0088fc !important;
 color: #fff !important;
 border-color: #0088fc;  
 box-shadow: 0px 0px 0px 2px #fff inset; 
 transition: all 0.2s ease;	
 }
-.btn-yellow{
+.btn_yellow{
 color: #f1f3f3;
 border: 2px solid #f9f604;
 background-color: none;
 }
-.btn-yellow:hover {
+.btn_yellow:hover {
 background: #f9f604 !important;
 color: #3e3e3e !important;
 border-color: #f9f604;  
 box-shadow: 0px 0px 0px 2px #b4b200 inset; 
 transition: all 0.2s ease;	
 }
-.btn-submit{
+.btn_submit{
 float: right;
 }
-#scroll-down{
+#scroll_down{
 margin-top: 20px;
 text-align: center;
 }
 
 
 /*********************************************app store buttons*******************************/
-.btn-app-store{
+.btn_app_store{
 	margin: 10px 0 16px 0;
 	color: white;
 	position: relative;
@@ -60,20 +56,20 @@ text-align: center;
 	border:2px solid #0088fc!important;
 	border-radius: 8px;
 }
-.btn-app-store:hover{
+.btn_app_store:hover{
   	background: #0088fc !important;
   	color: #fff;
   	border-color: #0088fc;
   	transition: all 0.2s ease;	
   	box-shadow: 0px 0px 0px 2px #333 inset, 0px 0px 0px 3px #fff inset;	
 }
-.btn-app-store i {
+.btn_app_store i {
     font-size: 40px;
     position: absolute;
     left: 11px;
     top: 7px;
 }
-.btn-app-store .small{
+.btn_app_store .small{
 	display: block;
 	font-size: 12px;
 	line-height: 12px;
@@ -81,7 +77,7 @@ text-align: center;
    	margin-top: 3px;
     font-weight: 400;
 }
-.btn-app-store .big{
+.btn_app_store .big{
 	display: block;
 	text-align: left;
 	font-size: 19px;

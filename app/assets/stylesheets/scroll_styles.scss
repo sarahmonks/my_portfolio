@@ -43,7 +43,7 @@ transition-timing-function: linear, linear;
 }
 
 /* Scroll to top button positioning and styles */
-.scroll-top-wrapper {
+.scroll_top_wrapper {
 position: fixed;
 opacity: 0;
 visibility: hidden;
@@ -69,14 +69,14 @@ border-radius: 4px;
 transition: all 0.5s ease-in-out;
 
 }
-.scroll-top-wrapper:hover {
+.scroll_top_wrapper:hover {
 background-color: #0088fc;
 }
-.scroll-top-wrapper.show {
+.scroll_top_wrapper.show {
 visibility: visible;
 cursor: pointer;
 opacity: 1.0;
 }
-.scroll-top-wrapper i.fa {
+.scroll_top_wrapper i.fa {
 line-height: inherit;
 }

@@ -37,11 +37,11 @@ list-style: disc !important;
 }
 
 
-.about-list{
+.about_list{
 margin-top: 20px;
 }
 
-.about-list > li {
+.about_list > li {
 position: relative; 
 margin-bottom:30px;
 text-align: left;
@@ -60,7 +60,7 @@ font-size: 1.5rem;
 word-wrap: break-word;
 }
 
-.about-list .about-icon {
+.about_list .about_icon {
 width: 58px;
 height: 58px;
 text-align: center;
@@ -81,29 +81,29 @@ position: absolute;
 top: 0px;
 left: 0px;
 }
-.about-icon .fa {
+.about_icon .fa {
 font-size: 23px;
 line-height: 56px;  
 }
 
 
-.about-list > li:hover .about-icon {
+.about_list > li:hover .about_icon {
 background: #0088fc;
 color: #fff;
 }
 
 @media (max-width: 460px) {  
-.about-list .about-icon {
+.about_list .about_icon {
 width: 38px;
 height: 38px;
 line-height: 36px;
 }
-.about-list > li {
+.about_list > li {
 position: relative; 
 margin-bottom:8%;
 padding-left: 45px;
 }
-.about-icon .fa {
+.about_icon .fa {
 font-size: 18px;
 line-height: 36px;  
 }

@@ -13,7 +13,7 @@ $(document).ready(function(){
     $(".btn").mouseup(function(){
         $(this).blur();         
     });
-    $('a.page-scroll').click(function() {
+    $('a.page_scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -55,13 +55,13 @@ $(document).ready(function(){
     //Show the scroll-to-top button when the page has been scrolled by over 100 px
     $(document).on('scroll', function(){
         if ($(window).scrollTop() > 100) {
-            $('.scroll-top-wrapper').addClass('show');
+            $('.scroll_top_wrapper').addClass('show');
         } else {
-            $('.scroll-top-wrapper').removeClass('show');
+            $('.scroll_top_wrapper').removeClass('show');
         }
     });
        
-    $('.scroll-top-wrapper').on('click', function (){
+    $('.scroll_top_wrapper').on('click', function (){
         //scroll to the very top of pages vertical offset
         verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
         element = $('body');

@@ -52,22 +52,18 @@ background: #fff;
 z-index: 1;
 line-height: 2.3rem;
 letter-spacing: .6px;
-
 }
 
-/*fix  for the flicker of elements (on page load) that are being animated with bootstrap*/
-/*we will hide the elements until documnet ready fires, then we will display them with animations*/
-.hide_before_doc_ready{
-	
-display: none;
-}
 
 /*the main container in application.html.erb layout page where all views will be inserted*/
 #main_container{
 /*add 50 padding-top on main container (same height as the navbar) as the navbar is fixed so we do this to push the content down*/ 
 padding: 50px 0px 0px 0px !important;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
 box-sizing: border-box;
 }
+
 @media (max-width: 767px) {
 /*set the padding-top to be zero on main container for small devices as we are changing the navbar to be position: relative on small devices*/ 
 #main_container{
@@ -169,7 +165,7 @@ font-size: 1.7rem;
 }
 
 /******************************************h2 title tags**********************************************/
-.title-dark, .title-light{
+.title_dark, .title_light{
 margin: 10px auto 10px auto;
 width: 360px;
 max-width: 96%;
@@ -177,7 +173,7 @@ display: block;
 text-align: center;
 
 }
-.title-dark h2, .title-light h2{
+.title_dark h2, .title_light h2{
 position: relative;
 border-bottom: solid 3px #e3e4e4;
 line-height: 1.1;
@@ -195,17 +191,17 @@ transition: all 0.3s ease 0s;
 -webkit-transition: all 0.3s ease 0s;
 }
 
-.title-dark h2 {
+.title_dark h2 {
 border-bottom: solid 3px #5a5a5a;
 color: #5a5a5a;
 }
 
-.title-light h2{
+.title_light h2{
 color: #cacbcb;
 }
 
 /*styling for the colored line which sits in the middle of the bottom-border of the title h2 tag*/
-.title-dark h2:after, .title-light h2:after {
+.title_dark h2:after, .title_light h2:after {
 background: none repeat scroll 0 0 #0088fc;
 bottom: -3px;
 content: "";
@@ -220,12 +216,12 @@ width: 50px;
 }
 
 
-.title-dark h2:hover, .title-light h2:hover{ 
+.title_dark h2:hover, .title_light h2:hover{ 
 color: #0088fc;
 }
 
 
-.title-dark h2:hover:after, .title-light h2:hover:after { 
+.title_dark h2:hover:after, .title_light h2:hover:after { 
 left: 0;
 margin-left: 0px;
 width: 100%;
@@ -235,7 +231,7 @@ transition: all 0.3s ease 0s;
 }
 
 
-.sub-head-light{
+.sub_head_light{
 display: block;
 text-align: center;
 letter-spacing: .6px;
@@ -270,24 +266,27 @@ delay-short, delay-med, and delay-long are to be added to the
 html element to be animated along with the animated class.
 The .animated class is defined in animate.css
 ===================================================================*/
-.animated.delay-short{
-	animation-delay: .2s;
+.animated.delay_short{
+	
 	-webkit-animation-delay: .2s;
 	-o-animation-delay: .2s;
 	-moz-animation-delay: .2s;
 	-ms-animation-delay: .2s;
+	animation-delay: .2s;
 }
-.animated.delay-med{
-	animation-delay: .3s;
+.animated.delay_med{
+
 	-webkit-animation-delay: .3s;
 	-o-animation-delay: .3s;
 	-moz-animation-delay: .3s;
 	-ms-animation-delay: .3s;
+	animation-delay: .3s;
 }
-.animated.delay-long{
-	animation-delay: .4s;
+.animated.delay_long{
+
 	-webkit-animation-delay: .4s;
 	-o-animation-delay: .4s;
 	-moz-animation-delay: .4s;
 	-ms-animation-delay: .4s;
+	animation-delay: .4s;
 }
