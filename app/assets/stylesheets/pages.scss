@@ -67,13 +67,16 @@ text-align: center;
 line-height: 56px;
 color: #555555;
 border: 2px solid #0088fc;
+
 -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 border-radius: 50%;
+
 -webkit-transition: all ease-in .4s;
 -moz-transition: all ease-in .4s;
 -o-transition: all ease-in .4s;
 -ms-transition: all ease-in .4s;
+transition: all ease-in .4s;
 position: absolute;
 top: 0px;
 left: 0px;

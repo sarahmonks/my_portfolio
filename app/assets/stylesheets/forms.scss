@@ -7,10 +7,12 @@ font-size: 1.6rem;
 letter-spacing: 1.0px; /*create a small space between each letter so the text is more readable*/
 }
 
+/*styling for bootstrap form-control class*/
 input.form-control, textarea.form-control{
+/*override box shadow and border defined by bootstrap*/
+box-shadow:	 	none !important; 
 -moz-box-shadow: 	none !important;
 -webkit-box-shadow: 	none !important;
-box-shadow:	 	none !important; 
 border: 1px solid #000 !important; 
 
 }
