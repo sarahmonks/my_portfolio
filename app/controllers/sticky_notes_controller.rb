@@ -28,7 +28,7 @@ class StickyNotesController < ApplicationController
         else
             render 'edit'
         end
-        #render plain: params[:article].inspect
+
     end
 
     def destroy
