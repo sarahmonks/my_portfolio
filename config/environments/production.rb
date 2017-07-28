@@ -70,7 +70,7 @@ config.action_mailer.smtp_settings = {
     port:                 587,
     domain:               'gmail.com',
   user_name:            'monks.sarah@gmail.com',
-  password:             '5275_3268Sm',
+  password:             '3268_5275Sm$$$$*',
   authentication:       'plain',
   enable_starttls_auto: true }
 
