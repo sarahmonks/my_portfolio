@@ -92,7 +92,7 @@
     <div class="section_content container-fluid">
         <%= render partial: 'partials/intro_section', 
                     :locals => {:section_title => 'Alien Relatives', 
-                    :section_intro_paragraph => 'I built the following desktop application using HTML5,CSS3, JavaScript, PHP (OOP) and mySQL. 
+                    :section_intro_paragraph => 'I built the following desktop application using React.js, HTML5, CSS3, JavaScript (including the Web Audio API), PHP (OOP) and mySQL. 
                             <br><br>The application is called "Alien relatives" and its aim is to create a fun, uplifting experience for the user. <br>Firstly, the user is prompted to enter their name. 
                             They are then informed of the "Alien tribe" they are related to (calculated based on the first letter of their name) and given a special wisdom message.',
                     :title_style => 'title_dark'} %>
@@ -101,14 +101,14 @@
             <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
                     <%= render partial: 'partials/showcase_image', 
                             :locals => {:img_alt => 'Alien Relatives', 
-                            :url => 'http://www.gamuzic.com/alien_relatives', 
+                            :url => 'http://alien-relatives.herokuapp.com/', 
                             :img_src => '/assets/alien_relatives_mac.png', 
                             :width => '1724', 
                             :height => '1408'} %>
             </div>  
         </div>  
         <div class="row wow bounceIn text-center">      
-            <%= link_to "View app","http://www.gamuzic.com/alien_relatives", :target => "_blank", class: "btn btn_blue btn_blue_text" %>   
+            <%= link_to "View app","http://alien-relatives.herokuapp.com/", :target => "_blank", class: "btn btn_blue btn_blue_text" %>   
         </div>  
     </div>
 </div>
