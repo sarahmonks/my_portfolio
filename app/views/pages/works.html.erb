@@ -170,53 +170,14 @@
                     :title_style => 'title_light'} %>
 
             <div class="row wow slideInLeft">  
-
-                <%= render partial: 'partials/azula_image', 
-                            :locals => {:img_alt => 'Azula waving', 
-                            :img_src => '/assets/azula/azula_wave.png', 
-                            :width => '278', 
-                            :height => '264'} %>
-
-                <div class="col-md-4 col-sm-4 col-xs-12">
-           
-                   <%= image_tag("/assets/azula/azula_wave.png", 
-                        size: "278x264", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>   
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                   <%= image_tag("/assets/azula/azula_puzzled.png", 
-                        size: "305x261", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>     
-              
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                     <%= image_tag("/assets/azula/azula_laugh.png", 
-                        size: "278x269", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>     
-                 <div class="col-md-4 col-sm-4 col-xs-12">
-                   <%= image_tag("/assets/azula/azula_dance.png", 
-                        size: "278x269", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>       
-                <div class="col-md-4 col-sm-4 col-xs-12">
-           
-                   <%= image_tag("/assets/azula/azula_sad.png", 
-                        size: "278x264", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>   
-                    
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                     <%= image_tag("/assets/azula/azula_zip_it.png", 
-                        size: "278x269", 
-                        :alt => "", 
-                        class: "azula_img") %>
-                </div>    
+                <% azula_animations.each do |animation| %>
+                    <%= render partial: "partials/azula_image", 
+                            :locals => {:img_alt => "#{animation['img_alt']}", 
+                            :img_src => "/assets/azula/#{animation['img_src']}", 
+                            :width => "#{animation['width']}", 
+                            :height => "#{animation['height']}"} %>
+                <% end %>
+  
             </div>  
             <div class="row wow bounceIn text-center">      
                 <%= link_to raw("View on LINE store"),"https://store.line.me/stickershop/product/1370468", :target => "_blank", class: "btn btn_blue" %>
