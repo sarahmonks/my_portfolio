@@ -1,8 +1,8 @@
 module PagesHelper
 	def skills
-		skills = {'HTML5'=> 90, 'CSS3' => 92, 
-			'JavaScript' => 85, 'jQuery' => 80, 'PHP' => 85, 
-			'MySQL' => 60, 'Ruby on Rails' => 75, 'React JS' => 60, 'Angular JS' => 70, 'Bootstrap' => 70}
+		skills = {'HTML5'=> 90, 'CSS3' => 92, 'SCSS' => 70,
+			'JavaScript' => 85, 'jQuery' => 90, 'PHP' => 85, 
+			'MySQL' => 60, 'Ruby on Rails' => 75, 'React JS' => 70, 'Angular JS' => 75, 'Bootstrap' => 70, 'Photoshop' => 90}
 
 	end
 
