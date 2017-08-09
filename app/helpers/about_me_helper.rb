@@ -30,7 +30,7 @@ module AboutMeHelper
                       'description_paragraphs' => 
                                           ['As part of the Digital Skills course in D.I.T, I worked with a cross functional Team planning and developing a mobile application  for the Dublin Inquirer.',
                                            'I was lead developer on this project.', 'After the Digital Skills course was completed in Nov. 2016, I continued to develop the app for the Dublin Inquirer 
-                                           and succesffully submited it to the Google Play store and the Apple App Store in March 2017.'],
+                                           and successfully submitted it to the Google Play store and the Apple App Store in March 2017.'],
                        'skills_list' => []               
                      },
                      {'title' => 'Blennerville Equestrian Centre (BEC)/July 2016-Nov. 2016',
