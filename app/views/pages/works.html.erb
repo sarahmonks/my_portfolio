@@ -67,8 +67,8 @@
     <div class="overlay_black_even">
         <div class="section_content container-fluid">
             <%= render partial: 'partials/intro_section', 
-                    :locals => {:section_title => 'To do App', 
-                    :section_intro_paragraph => 'I built a "To Do" list mobile application using Angular JS, HTML5 and CSS3.',
+                    :locals => {:section_title => 'Angular JS-"To Do list" App', 
+                    :section_intro_paragraph => 'I built a "To Do List" mobile application using Angular JS 1.x, HTML5 and CSS3.',
                     :title_style => 'title_light'} %>
 
             <div class="row wow slideInLeft">      
@@ -83,6 +83,7 @@
             </div>  
             <div class="row wow bounceIn text-center">      
                 <%= link_to "View app","http://www.gamuzic.com/todo", :target => "_blank", class: "btn btn_blue" %>
+               <%= link_to raw("View code"),"https://github.com/sarahmonks/angular_js_todo_app", :target => "_blank", class: "btn btn_blue extra_margin" %>
             </div>  
         </div>
     </div>
