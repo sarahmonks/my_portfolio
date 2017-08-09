@@ -25,7 +25,7 @@ color: #bababa;
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus, .navbar-nav .active{
 background: #1c1c1c !important;
-color: #0088fc;
+color: $cool-blue;
 }
 
 
@@ -57,7 +57,7 @@ color: #bababa;
 	-o-transition: .3s;
 	-ms-transition: .3s;
 	transition: .3s; 
-	border-bottom: 3px solid #0088fc;
+	border-bottom: 3px solid $cool-blue;
 
 	}
 }

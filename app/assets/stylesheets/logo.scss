@@ -25,7 +25,7 @@ transition: fill .6s ease-in-out;
 fill: transparent;
 -webkit-transition-delay: 1s; /* Safari */
 transition-delay: 1s;
-stroke:#0088fc;
+stroke: $cool-blue;
 stroke-width: 3px;
 padding: 0px !important;
 margin: 0px !important;
@@ -34,7 +34,7 @@ margin: 0px !important;
 .anime.completed svg path {
 -webkit-transition: fill .6s ease-in-out;
 transition: fill .6s ease-in-out;
-fill: #0088fc;
+fill: $cool-blue;
 -webkit-transition-delay: 1s; /* Safari */
 transition-delay: 1s;
 }

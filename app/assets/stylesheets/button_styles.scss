@@ -11,17 +11,17 @@ transition: all 0.2s ease;
 
 .btn_blue {
 color: #f1f3f3;
-border: 2px solid #0088fc;
+border: 2px solid $cool-blue;
 background-color: none;
 }
 .btn_blue.btn_blue_text {
-color: #0088fc !important;
+color: $cool-blue !important;
 }
 
 .btn_blue:hover {
-background: #0088fc !important;
+background: $cool-blue !important;
 color: #fff !important;
-border-color: #0088fc;  
+border-color: $cool-blue;
 box-shadow: 0px 0px 0px 2px #fff inset; 
 transition: all 0.2s ease;	
 }
@@ -56,13 +56,13 @@ margin: 5px 8px;
 	position: relative;
 	padding-left: 55px;
 	padding-right: 20px;
-	border:2px solid #0088fc!important;
+	border:2px solid $cool-blue!important;
 	border-radius: 8px;
 }
 .btn_app_store:hover{
-  	background: #0088fc !important;
+  	background: $cool-blue !important;
   	color: #fff;
-  	border-color: #0088fc;
+  	border-color: $cool-blue;
   	transition: all 0.2s ease;	
   	box-shadow: 0px 0px 0px 2px #333 inset, 0px 0px 0px 3px #fff inset;	
 }
