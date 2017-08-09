@@ -169,7 +169,14 @@
                     :section_intro_paragraph => 'I created a "Sticker pack" called "Azula" which is on sale on the LINE sticker store. <br> I drew the images in Photoshop and created the apng files with APNG Assembler. <br> The word Azula comes from the Spanish word Azul which means blue. <br>The aim of the Sticker pack is to bring fun and vibrance to people\'s chats.',
                     :title_style => 'title_light'} %>
 
-            <div class="row wow slideInLeft">      
+            <div class="row wow slideInLeft">  
+
+                <%= render partial: 'partials/azula_image', 
+                            :locals => {:img_alt => 'Azula waving', 
+                            :img_src => '/assets/azula/azula_wave.png', 
+                            :width => '278', 
+                            :height => '264'} %>
+
                 <div class="col-md-4 col-sm-4 col-xs-12">
            
                    <%= image_tag("/assets/azula/azula_wave.png", 
